@@ -1,0 +1,4 @@
+php_flag display_errors On
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^([a-z]{2})\.jobvisaworld\.com$ [NC]
+RewriteRule ^(.*)$ country.php?cc=%1&path=$1 [QSA,L]
